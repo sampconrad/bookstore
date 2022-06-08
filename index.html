@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Store | Ecommerce Website</title>
+		<!-- CSS FILE -->
+		<link rel="stylesheet" href="style.css" />
+		<!-- GOOGLE FONTS -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Work+Sans:wght@200;300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- FONT AWESOME -->
+		<script
+			src="https://kit.fontawesome.com/0d3faf735c.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<!-- NAVIGATION BAR -->
+		<div class="header">
+			<div class="container">
+				<div class="navbar">
+					<div class="logo">
+						<a href="index.html"
+							><img src="img/logo.png" width="125px" alt=""
+						/></a>
+					</div>
+					<nav>
+						<ul id="MenuItems">
+							<li class="nav-icon"><a href="index.html">Home</a></li>
+							<li class="nav-icon">
+								<a href="catalogue.html">Catalogue</a>
+							</li>
+							<li class="nav-icon">
+								<a href="product-page.html">Product Page</a>
+							</li>
+							<!-- <li class="nav-icon"><a href="contact.html">Contact</a></li> -->
+							<li class="nav-icon"><a href="account.html">Account</a></li>
+						</ul>
+					</nav>
+					<a class="nav-icon" href="cart.html"
+						><img src="img/cart.png" width="30px" height="30px" alt=""
+					/></a>
+					<img
+						src="img/menu.png"
+						class="menu-icon"
+						alt=""
+						onclick="menutoggle()"
+					/>
+				</div>
+				<div class="row">
+					<div class="col-2">
+						<h1 class="title-1">Give Your Workout</h1>
+						<h1 class="title-2">A New Style</h1>
+						<!-- <h1>Give Your Workout <br />A New Style</h1> -->
+						<p>
+							Explore the new Summer 2022 Sportswear Collection. <br />You'll be
+							amazed by our deals and exclusive brands!
+						</p>
+						<a href="#products" class="btn">Shop Now &#8594;</a>
+					</div>
+					<div class="col-2">
+						<img src="img/runner.png" alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- FEATURED CATEGORIES -->
+		<div class="categories">
+			<div class="small-container">
+				<div class="row">
+					<div class="col-3">
+						<a href="catalogue.html"><img src="img/category-1.jpg" alt="" /></a>
+					</div>
+					<div class="col-3">
+						<a href="catalogue.html"><img src="img/category-2.jpg" alt="" /></a>
+					</div>
+					<div class="col-3">
+						<a href="catalogue.html"><img src="img/category-3.jpg" alt="" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- PRODUCTS -->
+		<section id="products">
+			<div class="small-container">
+				<!-- FEATURED PRODUCTS -->
+				<h2 class="title">Featured Products</h2>
+				<div class="row">
+					<div class="col-4">
+						<a href="product-page.html"
+							><img src="img/product-1.jpg" alt=""
+						/></a>
+						<a href="product-page.html"><h4>Red Printed T-Shirt</h4></a>
+						<div class="rating">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star-half-stroke"></i>
+						</div>
+						<p>$50.00</p>
+					</div>
+					<div class="col-4">
+						<a href="product-page.html"
+							><img src="img/product-2.jpg" alt=""
+						/></a>
+						<a href="product-page.html"><h4>Black Running Sneakers</h4></a>
+						<div class="rating">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<p>$90.00</p>
+					</div>
+					<div class="col-4">
+						<a href="product-page.html"
+							><img src="img/product-3.jpg" alt=""
+						/></a>
+						<a href="product-page.html"><h4>Grey Sweatpants</h4></a>
+						<div class="rating">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star-half-stroke"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<p>$70.00</p>
+					</div>
+					<div class="col-4">
+						<a href="product-page.html"
+							><img src="img/product-4.jpg" alt=""
+						/></a>
+						<a href="product-page.html"><h4>Blue Polo Shirt</h4></a>
+						<div class="rating">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star-half-stroke"></i>
+						</div>
+						<p>$65.00</p>
+					</div>
+				</div>
+
+				<!-- LATEST PRODUCTS -->
+				<h2 class="title">Latest Products</h2>
+				<div class="row">
+					<div class="col-4">
+						<a href="product-page.html"
+							><img src="img/product-5.jpg" alt=""
+						/></a>
+						<a href="product-page.html"><h4>Grey Mid Jordans</h4></a>
+						<div class="rating">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<p>$120.00</p>
+					</div>
+					<div class="col-4">
+						<a href="product-page.html"
+							><img src="img/product-6.jpg" alt=""
+						/></a>
+						<a href="product-page.html"><h4>Black Stripped T-Shirt</h4></a>
+						<div class="rating">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star-half-stroke"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<p>$40.00</p>
+					</div>
+					<div class="col-4">
+						<a href="product-page.html"
+							><img src="img/product-7.jpg" alt=""
+						/></a>
+						<a href="product-page.html"><h4>Sorted 3-Pack Socks</h4></a>
+						<div class="rating">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star-half-stroke"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<p>$20.00</p>
+					</div>
+					<div class="col-4">
+						<a href="product-page.html"
+							><img src="img/product-8.jpg" alt=""
+						/></a>
+						<a href="product-page.html"><h4>Black Sport Watch</h4></a>
+						<div class="rating">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<p>$180.00</p>
+					</div>
+					<div class="col-4">
+						<a href="product-page.html"
+							><img src="img/product-9.jpg" alt=""
+						/></a>
+						<a href="product-page.html"><h4>Grey Casual Watch</h4></a>
+						<div class="rating">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star-half-stroke"></i>
+						</div>
+						<p>$140.00</p>
+					</div>
+					<div class="col-4">
+						<a href="product-page.html"
+							><img src="img/product-10.jpg" alt=""
+						/></a>
+						<a href="product-page.html"
+							><h4>Black & Orange Flat Sneakers</h4></a
+						>
+						<div class="rating">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<p>$70.00</p>
+					</div>
+					<div class="col-4">
+						<a href="product-page.html"
+							><img src="img/product-11.jpg" alt=""
+						/></a>
+						<a href="product-page.html"><h4>Grey Comfortable Shoes</h4></a>
+						<div class="rating">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star-half-stroke"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<p>$50.00</p>
+					</div>
+					<div class="col-4">
+						<a href="product-page.html"
+							><img src="img/product-12.jpg" alt=""
+						/></a>
+						<a href="product-page.html"><h4>Black Gym Sweats</h4></a>
+						<div class="rating">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<p>$55.00</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- OFFERS -->
+		<div class="offer">
+			<div class="small-container">
+				<div class="row">
+					<div class="col-2-2">
+						<img class="offer-img" src="img/exclusive.png" alt="" />
+					</div>
+					<div class="col-2-2">
+						<p>Exclusively Available on Store</p>
+						<h1>Sport Band 4</h1>
+						<small
+							>The Sport Band 4 features a 39.9% larger AMOLED full-color
+							touchscreen display with adjustable brightness. More space, less
+							clutter.</small
+						>
+						<br />
+						<a href="" class="btn">Buy Now &#8594;</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- REVIEWS -->
+		<div class="review">
+			<div class="small-container">
+				<div class="row">
+					<div class="col-3">
+						<i class="fa-solid fa-quote-left"></i>
+						<p>
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+							Dignissimos labore at dolorum eius?
+						</p>
+						<div class="rating">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star-half-stroke"></i>
+						</div>
+						<img src="img/user-1.png" alt="" />
+						<h3>Sean Parker</h3>
+					</div>
+					<div class="col-3">
+						<i class="fa-solid fa-quote-left"></i>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Aspernatur, architecto? Ipsam, dignissimos!.
+						</p>
+						<div class="rating">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+						</div>
+						<img src="img/user-2.png" alt="" />
+						<h3>Mike Smith</h3>
+					</div>
+					<div class="col-3">
+						<i class="fa-solid fa-quote-left"></i>
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
+							facere autem eius, odit quas placeat.
+						</p>
+						<div class="rating">
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-solid fa-star"></i>
+							<i class="fa-regular fa-star"></i>
+						</div>
+						<img src="img/user-3.png" alt="" />
+						<h3>Jane Doe</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- BRANDS -->
+		<div class="brands">
+			<div class="small-container">
+				<div class="row">
+					<div class="col-5">
+						<img src="img/logo-paypal.png" alt="" />
+					</div>
+					<div id="nike">
+						<img src="img/logo-nike.png" alt="" />
+					</div>
+					<div class="col-5">
+						<img src="img/logo-philips.png" alt="" />
+					</div>
+					<div class="col-5">
+						<img src="img/logo-coca-cola.png" alt="" />
+					</div>
+					<div id="adidas">
+						<img src="img/logo-adidas.png" alt="" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- FOOTER -->
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="footer-col-1">
+						<h3>Dowload Our App</h3>
+						<p>Download our App for Android and IOS phones</p>
+						<div class="app-logo">
+							<img src="img/play-store.png" alt="" />
+							<img src="img/app-store.png" alt="" />
+						</div>
+					</div>
+					<div class="footer-col-2">
+						<a href="#"><img src="img/logo-white.png" alt="" /></a>
+						<p>
+							The meaning of life is not simply to exist, to survive, but to
+							move ahead, to go up, to achieve, to conquer.
+						</p>
+					</div>
+					<div class="footer-col-3">
+						<h3>Useful Links</h3>
+						<ul>
+							<li>Coupons</li>
+							<li>Blog Post</li>
+							<li>Return Policy</li>
+							<li>Join Affiliate</li>
+						</ul>
+					</div>
+					<div class="footer-col-4">
+						<h3>Follow Us</h3>
+						<ul>
+							<li>Facebook</li>
+							<li>Twitter</li>
+							<li>Instagram</li>
+							<li>YouTube</li>
+						</ul>
+					</div>
+				</div>
+				<hr />
+				<p class="copyright">
+					Developed by <a href="https://www.sampconrad.com/">Conrado Sampaio</a>
+				</p>
+			</div>
+		</div>
+
+		<!-- JS FOR TOGGLE MENU -->
+		<script>
+			let MenuItems = document.getElementById('MenuItems');
+			MenuItems.style.maxHeight = '0px';
+			function menutoggle() {
+				if (MenuItems.style.maxHeight == '0px') {
+					MenuItems.style.maxHeight = '200px';
+				} else {
+					MenuItems.style.maxHeight = '0px';
+				}
+			}
+		</script>
+	</body>
+</html>
