@@ -5,7 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Store - Catalogue</title>
+		<link rel="icon" type="image/png" href="favicon.png" />
+		<title>Bookstore - Catálogo</title>
 		<!-- CSS FILE -->
 		<link rel="stylesheet" href="style.css" />
 		<!-- GOOGLE FONTS -->
@@ -24,7 +25,7 @@
 	<body>
 		<!-- NAVIGATION BAR -->
 		<div class="container">
-			<div class="navbar">
+			<div class="navbar" id="navbar">
 				<!-- <div class="logo">
 					<img src="img/logo.png" width="125px" alt="" />
 				</div>
@@ -45,20 +46,22 @@
 					onclick="menutoggle()" -->
 				<div class="logo">
 					<a href="index.html"
-						><img src="img/logo.png" width="125px" alt=""
+						><img src="img/cover.png" width="150px" alt=""
 					/></a>
 				</div>
 				<nav>
 					<ul id="MenuItems">
-						<li class="nav-icon"><a href="index.html">Home</a></li>
+						<li class="nav-icon"><a href="index.html">Página Inicial</a></li>
 						<li class="nav-icon">
-							<a href="catalogue.html">Catalogue</a>
+							<a href="catalogue.html">Catálogo</a>
 						</li>
 						<li class="nav-icon">
-							<a href="product-page.html">Product Page</a>
+							<a href="product-page.html">Página de Produto</a>
 						</li>
 						<!-- <li class="nav-icon"><a href="contact.html">Contact</a></li> -->
-						<li class="nav-icon"><a href="account.html">Account</a></li>
+						<li class="nav-icon">
+							<a href="account.html">Criação de Conta</a>
+						</li>
 					</ul>
 				</nav>
 				<a class="nav-icon" href="cart.html"
@@ -75,43 +78,39 @@
 		<!-- PRODUCTS -->
 		<div class="small-container">
 			<div class="row row-2">
-				<h2>All Products</h2>
+				<h2>Catálogo</h2>
 				<select>
-					<option>Default Sorting</option>
-					<option>Sort By Price</option>
-					<option>Sort By Popularity</option>
-					<option>Sort By Rating</option>
-					<option>Sort By Discount</option>
+					<option value="" disabled selected hidden>Ordenar</option>
+					<option>Por Preço</option>
+					<option>Por Demanda</option>
+					<option>Por Estrela</option>
+					<option>Por Desconto</option>
 				</select>
+			</div>
+			<div class="buttons">
+				<button class="button all active">Todos</button>
+				<button class="button white">Livros</button>
+				<button class="button grey">Papelaria</button>
+				<button class="button blue">Acessórios</button>
+				<button class="button yellow">Fardas</button>
+				<button class="button red">Cursos</button>
 			</div>
 			<div class="row">
 				<div class="col-4">
 					<a href="product-page.html"><img src="img/product-1.jpg" alt="" /></a>
-					<a href="product-page.html"><h4>Red Printed T-Shirt</h4></a>
+					<a href="product-page.html"><h4>Camiseta Farda Vermelha</h4></a>
 					<div class="rating">
 						<i class="fa-solid fa-star"></i>
 						<i class="fa-solid fa-star"></i>
 						<i class="fa-solid fa-star"></i>
 						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star-half-stroke"></i>
+						<i class="fa-solid fa-star"></i>
 					</div>
-					<p>$50.00</p>
+					<p>R$60.00</p>
 				</div>
 				<div class="col-4">
-					<a href="product-page.html"><img src="img/product-2.jpg" alt="" /></a>
-					<a href="product-page.html"><h4>Black Running Sneakers</h4></a>
-					<div class="rating">
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-regular fa-star"></i>
-					</div>
-					<p>$90.00</p>
-				</div>
-				<div class="col-4">
-					<a href="product-page.html"><img src="img/product-3.jpg" alt="" /></a>
-					<a href="product-page.html"><h4>Grey Sweatpants</h4></a>
+					<a href="product-page.html"><img src="img/product14.jpg" alt="" /></a>
+					<a href="product-page.html"><h4>Caderneta Anotações</h4></a>
 					<div class="rating">
 						<i class="fa-solid fa-star"></i>
 						<i class="fa-solid fa-star"></i>
@@ -119,37 +118,11 @@
 						<i class="fa-solid fa-star-half-stroke"></i>
 						<i class="fa-regular fa-star"></i>
 					</div>
-					<p>$70.00</p>
+					<p>R$20.00</p>
 				</div>
 				<div class="col-4">
-					<a href="product-page.html"><img src="img/product-4.jpg" alt="" /></a>
-					<a href="product-page.html"><h4>Blue Polo Shirt</h4></a>
-					<div class="rating">
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star-half-stroke"></i>
-					</div>
-					<p>$65.00</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-4">
-					<a href="product-page.html"><img src="img/product-5.jpg" alt="" /></a>
-					<a href="product-page.html"><h4>Grey Mid Jordans</h4></a>
-					<div class="rating">
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-					</div>
-					<p>$120.00</p>
-				</div>
-				<div class="col-4">
-					<a href="product-page.html"><img src="img/product-6.jpg" alt="" /></a>
-					<a href="product-page.html"><h4>Black Stripped T-Shirt</h4></a>
+					<a href="product-page.html"><img src="img/product13.jpg" alt="" /></a>
+					<a href="product-page.html"><h4>Lápis Colorido</h4></a>
 					<div class="rating">
 						<i class="fa-solid fa-star"></i>
 						<i class="fa-solid fa-star"></i>
@@ -157,23 +130,11 @@
 						<i class="fa-solid fa-star-half-stroke"></i>
 						<i class="fa-regular fa-star"></i>
 					</div>
-					<p>$40.00</p>
+					<p>R$5.00</p>
 				</div>
 				<div class="col-4">
-					<a href="product-page.html"><img src="img/product-7.jpg" alt="" /></a>
-					<a href="product-page.html"><h4>Sorted 3-Pack Socks</h4></a>
-					<div class="rating">
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star-half-stroke"></i>
-						<i class="fa-regular fa-star"></i>
-					</div>
-					<p>$20.00</p>
-				</div>
-				<div class="col-4">
-					<a href="product-page.html"><img src="img/product-8.jpg" alt="" /></a>
-					<a href="product-page.html"><h4>Black Sport Watch</h4></a>
+					<a href="product-page.html"><img src="img/product12.jpg" alt="" /></a>
+					<a href="product-page.html"><h4>Planilha</h4></a>
 					<div class="rating">
 						<i class="fa-solid fa-star"></i>
 						<i class="fa-solid fa-star"></i>
@@ -181,11 +142,11 @@
 						<i class="fa-regular fa-star"></i>
 						<i class="fa-regular fa-star"></i>
 					</div>
-					<p>$180.00</p>
+					<p>R$15.00</p>
 				</div>
 				<div class="col-4">
-					<a href="product-page.html"><img src="img/product-9.jpg" alt="" /></a>
-					<a href="product-page.html"><h4>Grey Casual Watch</h4></a>
+					<a href="product-page.html"><img src="img/product8.jpg" alt="" /></a>
+					<a href="product-page.html"><h4>Caderneta</h4></a>
 					<div class="rating">
 						<i class="fa-solid fa-star"></i>
 						<i class="fa-solid fa-star"></i>
@@ -193,13 +154,11 @@
 						<i class="fa-solid fa-star"></i>
 						<i class="fa-solid fa-star-half-stroke"></i>
 					</div>
-					<p>$140.00</p>
+					<p>R$40.00</p>
 				</div>
 				<div class="col-4">
-					<a href="product-page.html"
-						><img src="img/product-10.jpg" alt=""
-					/></a>
-					<a href="product-page.html"><h4>Black & Orange Flat Sneakers</h4></a>
+					<a href="product-page.html"><img src="img/product6.jpg" alt="" /></a>
+					<a href="product-page.html"><h4>Fita Adesiva</h4></a>
 					<div class="rating">
 						<i class="fa-solid fa-star"></i>
 						<i class="fa-solid fa-star"></i>
@@ -207,13 +166,63 @@
 						<i class="fa-solid fa-star"></i>
 						<i class="fa-regular fa-star"></i>
 					</div>
-					<p>$70.00</p>
+					<p>R$15.00</p>
+				</div>
+				<div class="col-4">
+					<a href="product-page.html"><img src="img/product11.jpg" alt="" /></a>
+					<a href="product-page.html"><h4>Cadernos Sortidos</h4></a>
+					<div class="rating">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star-half-stroke"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<p>R$50.00</p>
 				</div>
 				<div class="col-4">
 					<a href="product-page.html"
 						><img src="img/product-11.jpg" alt=""
 					/></a>
-					<a href="product-page.html"><h4>Grey Comfortable Shoes</h4></a>
+					<a href="product-page.html"><h4>Tênis Farda Cinza</h4></a>
+					<div class="rating">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<p>R$125.00</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-4">
+					<a href="product-page.html"><img src="img/ebook5.jpg" alt="" /></a>
+					<a href="product-page.html"><h4>Memórias Póstumas de Brás</h4></a>
+					<div class="rating">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star-half-stroke"></i>
+					</div>
+					<p>R$50.00</p>
+				</div>
+				<div class="col-4">
+					<a href="product-page.html"><img src="img/ebook6.jpg" alt="" /></a>
+					<a href="product-page.html"><h4>JavaScript: O Guia Definitivo</h4></a>
+					<div class="rating">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<p>R$90.00</p>
+				</div>
+				<div class="col-4">
+					<a href="product-page.html"><img src="img/ebook7.jpg" alt="" /></a>
+					<a href="product-page.html"><h4>Lógica Para Leigos</h4></a>
 					<div class="rating">
 						<i class="fa-solid fa-star"></i>
 						<i class="fa-solid fa-star"></i>
@@ -221,13 +230,37 @@
 						<i class="fa-solid fa-star-half-stroke"></i>
 						<i class="fa-regular fa-star"></i>
 					</div>
-					<p>$50.00</p>
+					<p>R$70.00</p>
 				</div>
 				<div class="col-4">
-					<a href="product-page.html"
-						><img src="img/product-12.jpg" alt=""
-					/></a>
-					<a href="product-page.html"><h4>Black Gym Sweats</h4></a>
+					<a href="product-page.html"><img src="img/ebook8.jpg" alt="" /></a>
+					<a href="product-page.html"><h4>Fantástico Mundo Números</h4></a>
+					<div class="rating">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star-half-stroke"></i>
+					</div>
+					<p>R$65.00</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-4">
+					<a href="product-page.html"><img src="img/product1.jpg" alt="" /></a>
+					<a href="product-page.html"><h4>Canetas Sortidas</h4></a>
+					<div class="rating">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star-half-stroke"></i>
+					</div>
+					<p>R$20.00</p>
+				</div>
+				<div class="col-4">
+					<a href="product-page.html"><img src="img/product2.jpg" alt="" /></a>
+					<a href="product-page.html"><h4>Kit Estudante</h4></a>
 					<div class="rating">
 						<i class="fa-solid fa-star"></i>
 						<i class="fa-solid fa-star"></i>
@@ -235,9 +268,36 @@
 						<i class="fa-solid fa-star"></i>
 						<i class="fa-regular fa-star"></i>
 					</div>
-					<p>$55.00</p>
+					<p>R$95.00</p>
+				</div>
+				<div class="col-4">
+					<a href="product-page.html"><img src="img/category3.jpg" alt="" /></a>
+					<a href="product-page.html"><h4>Livros Básicos</h4></a>
+					<div class="rating">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star-half-stroke"></i>
+						<i class="fa-regular fa-star"></i>
+					</div>
+					<p>R$200.00</p>
+				</div>
+				<div class="col-4">
+					<a href="product-page.html"
+						><img src="img/product-12.jpg" alt=""
+					/></a>
+					<a href="product-page.html"><h4>Moletom Farda Preto</h4></a>
+					<div class="rating">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star-half-stroke"></i>
+					</div>
+					<p>R$85.00</p>
 				</div>
 			</div>
+
 			<div class="page-btn">
 				<span>1</span>
 				<span>2</span>
@@ -252,31 +312,35 @@
 			<div class="container">
 				<div class="row">
 					<div class="footer-col-1">
-						<h3>Dowload Our App</h3>
-						<p>Download our App for Android and IOS phones</p>
+						<h3>Baixe Nosso App</h3>
+						<p>Baixe nosso App para dispositivos Android e iOS.</p>
 						<div class="app-logo">
-							<img src="img/play-store.png" alt="" />
-							<img src="img/app-store.png" alt="" />
+							<a style="cursor: pointer"
+								><img src="img/play-store.png" alt=""
+							/></a>
+							<a style="cursor: pointer"
+								><img src="img/app-store.png" alt=""
+							/></a>
 						</div>
 					</div>
 					<div class="footer-col-2">
-						<a href="#"><img src="img/logo-white.png" alt="" /></a>
+						<a href="#"><img src="img/cover2-white.png" alt="" /></a>
 						<p>
-							The meaning of life is not simply to exist, to survive, but to
-							move ahead, to go up, to achieve, to conquer.
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Praesentium, nisi.
 						</p>
 					</div>
 					<div class="footer-col-3">
-						<h3>Useful Links</h3>
+						<h3>Links Úteis</h3>
 						<ul>
-							<li>Coupons</li>
-							<li>Blog Post</li>
-							<li>Return Policy</li>
-							<li>Join Affiliate</li>
+							<li>Missão</li>
+							<li>Unidades</li>
+							<li>Atendimento</li>
+							<li>Termos & Condições</li>
 						</ul>
 					</div>
 					<div class="footer-col-4">
-						<h3>Follow Us</h3>
+						<h3>Nos Siga</h3>
 						<ul>
 							<li>Facebook</li>
 							<li>Twitter</li>
@@ -287,7 +351,8 @@
 				</div>
 				<hr />
 				<p class="copyright">
-					Developed by <a href="https://www.sampconrad.com/">Conrado Sampaio</a>
+					Desenvolvido por
+					<a href="https://www.sampconrad.com/">Conrado Sampaio</a>
 				</p>
 			</div>
 		</div>
@@ -303,6 +368,17 @@
 					MenuItems.style.maxHeight = '0px';
 				}
 			}
+		</script>
+		<!-- JS FOR STICKY NAVBAR -->
+		<script>
+			const navbar = document.getElementById('navbar');
+			window.onscroll = () => {
+				if (window.scrollY > 50) {
+					navbar.classList.add('nav-active');
+				} else {
+					navbar.classList.remove('nav-active');
+				}
+			};
 		</script>
 	</body>
 </html>

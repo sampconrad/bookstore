@@ -1,9 +1,9 @@
 # Store
 
-Demo: https://sampconrad.github.io/store/
+Demo: https://sampconrad.github.io/bookstore/
 
 ## About
 
-Frontend for an e-commerce website using HTML/CSS/JS.
+Frontend design for an e-commerce website using vanilla HTML/CSS/JS.
 
 ![preview](./preview.png)
