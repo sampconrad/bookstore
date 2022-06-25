@@ -156,6 +156,21 @@ p {
 	min-width: 300px;
 }
 
+#A{
+	font-family: 'Cabin Sketch', cursive;
+
+	font-size: 26px;
+	font-weight: 700;
+	color: rgb(70, 181, 255);
+}
+#Z{
+	font-family: 'Cabin Sketch', cursive;
+
+	font-size: 26px;
+	font-weight: 700;
+	color: rgb(255, 206, 70);
+}
+
 .col-2 img {
 	max-width: 100%;
 	/* padding: 20px 0; */
@@ -173,6 +188,8 @@ p {
 
 .title-1 {
 	color: #555;
+	/* font-family: 'Cabin Sketch', cursive; */
+
 }
 
 .title-2 {
@@ -316,9 +333,13 @@ p {
 }
 
 #category-1 h3 .category-top {
+	/* font-family: 'Londrina Sketch', cursive; */
+
 	color: rgb(220, 183, 255);
 }
 #category-1 h3 .category-bottom {
+	/* font-family: 'Londrina Sketch', cursive; */
+
 	color: rgb(206, 255, 247);
 }
 
@@ -373,9 +394,13 @@ p {
 }
 
 #category-2 h3 .category-top {
+	/* font-family: 'Londrina Sketch', cursive; */
+
 	color: rgb(255, 163, 163);
 }
 #category-2 h3 .category-bottom {
+	/* font-family: 'Londrina Sketch', cursive; */
+
 	color: rgb(255, 237, 203);
 }
 
@@ -433,9 +458,13 @@ p {
 }
 
 #category-3 h3 .category-top {
+	/* font-family: 'Londrina Sketch', cursive; */
+
 	color: rgb(183, 238, 255);
 }
 #category-3 h3 .category-bottom {
+	/* font-family: 'Londrina Sketch', cursive; */
+
 	color: rgb(210, 255, 214);
 }
 
