@@ -6,12 +6,10 @@
 	font-family: 'Poppins', sans-serif;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	-webkit-tap-highlight-color: transparent;
-	
 }
 
 body {
-	/* overflow-x: hidden; */
-	
+	overflow-x: hidden;
 }
 
 .navbar {
@@ -43,7 +41,6 @@ header .navbar {
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
 		rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
-
 
 nav {
 	flex: 1;
@@ -248,8 +245,6 @@ p {
 	/* width: 300px; */
 }
 
-
-
 .col-2-2 h2 {
 	color: rgb(0, 255, 149);
 }
@@ -285,13 +280,13 @@ p {
 }
 .nav-icon:hover {
 	transform: translateY(-3px);
-		/* background: linear-gradient(45deg, #ffd446 0%, #fcff46 90%);
+	/* background: linear-gradient(45deg, #ffd446 0%, #fcff46 90%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent; */
 }
 
 .nav-icon a:hover {
-	color:#ffd446;
+	color: #ffd446;
 }
 .nav-icon img {
 	filter: invert(100%) sepia(83%) saturate(0%) hue-rotate(380deg)
@@ -302,7 +297,6 @@ p {
 	filter: invert(70%) sepia(83%) saturate(3207%) hue-rotate(380deg)
 		brightness(95%) contrast(300%);
 }
-
 
 .header {
 	background: radial-gradient(#4b8aff 20%, #4a89ff);
@@ -319,7 +313,6 @@ p {
 	margin: 0 0 70px 0;
 }
 
-
 .col-3 {
 	flex-basis: 30%;
 	min-width: 250px;
@@ -327,12 +320,10 @@ p {
 	transition: 0.5s;
 }
 
-
 .col-3:hover {
 	transform: translateY(-5px);
 	filter: brightness(110%);
 }
-
 
 .categories-small-item {
 	flex-basis: 15%;
@@ -346,7 +337,6 @@ p {
 .categories-small-item img {
 	width: 100px;
 }
-
 
 .categories-small-item:hover {
 	transform: translateY(-5px);
@@ -420,7 +410,6 @@ background: linear-gradient(120deg, #4787ff 20%, #26e9ff 70%);
 	/* color: #fff; */
 	line-height: 90px;
 	font-weight: 700;
-	
 }
 
 #category-1 h3 .category-top {
@@ -446,8 +435,7 @@ background: linear-gradient(120deg, #4787ff 20%, #26e9ff 70%);
 	font-size: 30px;
 	line-height: 30px;
 	font-weight: 600;
-	  text-shadow: 2px 2px #00000025;
-
+	text-shadow: 2px 2px #00000025;
 }
 
 #category-1 p .p-top {
@@ -490,12 +478,12 @@ background: linear-gradient(120deg, #4787ff 20%, #26e9ff 70%);
 
 #category-2 h3 .category-top {
 	font-family: 'Londrina Sketch', cursive;
-text-shadow: 2px 2px #00000025;
+	text-shadow: 2px 2px #00000025;
 	color: rgb(255, 163, 163);
 }
 #category-2 h3 .category-bottom {
 	font-family: 'Londrina Sketch', cursive;
-text-shadow: 2px 2px #00000025;
+	text-shadow: 2px 2px #00000025;
 	color: rgb(255, 237, 203);
 }
 
@@ -557,12 +545,12 @@ text-shadow: 2px 2px #00000025;
 
 #category-3 h3 .category-top {
 	font-family: 'Cabin Sketch', cursive;
-text-shadow: 2px 2px #00000025;
+	text-shadow: 2px 2px #00000025;
 	color: rgb(183, 238, 255);
 }
 #category-3 h3 .category-bottom {
 	font-family: 'Cabin Sketch', cursive;
-text-shadow: 2px 2px #00000025;
+	text-shadow: 2px 2px #00000025;
 	color: rgb(210, 255, 214);
 }
 
@@ -634,7 +622,6 @@ text-shadow: 2px 2px #00000025;
 	font-size: 50px;
 	color: rgb(85, 85, 85);
 	font-family: 'Cabin Sketch', cursive;
-
 }
 
 .title::after {
@@ -677,20 +664,20 @@ h4 {
 /* OFFER */
 .offer {
 	/* background: radial-gradient(rgb(63, 153, 255), #4a89ff); */
-	background:linear-gradient(120deg, #ffd446 20%, #fcff46 100%);
+	background: linear-gradient(120deg, #ffd446 20%, #fcff46 100%);
 	margin-top: 80px;
 	padding: 0px 0;
 }
-.offer:before{
-	content:" ";
-	display:block;
-	width:100%;
+.offer:before {
+	content: ' ';
+	display: block;
+	width: 100%;
 	height: 65px;
-	background-image:url('https://ecorelos.com/wp-content/uploads/2020/04/torn-border2upside.png');
-	position:absolute;
-	margin-top:-30px;
+	background-image: url('https://ecorelos.com/wp-content/uploads/2020/04/torn-border2upside.png');
+	position: absolute;
+	margin-top: -30px;
 	/* left:-500px; */
-	z-index:1;
+	z-index: 1;
 }
 
 .offer:after {
@@ -703,7 +690,6 @@ h4 {
 	width: 100%;
 	/* left: -500px; */
 }
-
 
 .col-2 .offer-img {
 	padding: 50px;
@@ -738,48 +724,45 @@ small {
 } */
 
 .review .course1 {
-		background-image: url('img/vacation.png');
-				background-repeat: no-repeat;
-		background-color: #50b0ff;
+	background-image: url('img/vacation.png');
+	background-repeat: no-repeat;
+	background-color: #50b0ff;
 }
 .review .course2 {
-		background-image: url('img/revisao3.png');
-				background-repeat: no-repeat;
-		background-size: cover;
-		background-color: #ff8383;
-
-	
+	background-image: url('img/revisao3.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #ff8383;
 }
 .review .course3 {
-		background-image: url('img/revision2.png');
-				background-repeat: no-repeat;
-		background-size: cover;
-		background-color: #94ff99;
+	background-image: url('img/revision2.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #94ff99;
 }
 .review .course4 {
-		background-image: url('img/doctor2.png');
-				background-repeat: no-repeat;
-		background-size: cover;
-		background-color: #ff94ca;
+	background-image: url('img/doctor2.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #ff94ca;
 }
 .review .course5 {
-		background-image: url('img/engineer2.png');
-				background-repeat: no-repeat;
-		background-size: cover;
-		background-color: #5ae9d6;
+	background-image: url('img/engineer2.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #5ae9d6;
 }
 .review .course6 {
-		background-image: url('img/revisao4.png');
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-color: #ff9650;
+	background-image: url('img/revisao4.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #ff9650;
 }
 
 .review .col-3:hover {
 	transform: translateY(-10px);
 	filter: brightness(100%);
 }
-
 
 .fa-quote-left {
 	font-size: 34px;
@@ -792,8 +775,7 @@ small {
 .review-price {
 	font-size: 18px;
 	font-weight: 400;
-	background: 
-	linear-gradient(120deg, #ffd446 20%, #fcff46 100%);
+	background: linear-gradient(120deg, #ffd446 20%, #fcff46 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -902,16 +884,16 @@ small {
 	padding: 80px 0 20px;
 }
 
-	.footer:before{
-	content:" ";
-	display:block;
-	width:100%;
+.footer:before {
+	content: ' ';
+	display: block;
+	width: 100%;
 	height: 65px;
-	background-image:url('https://ecorelos.com/wp-content/uploads/2020/04/torn-border2upside.png');
-	position:absolute;
-	margin-top:-100px;
+	background-image: url('https://ecorelos.com/wp-content/uploads/2020/04/torn-border2upside.png');
+	position: absolute;
+	margin-top: -100px;
 	/* left:-500px; */
-	z-index:1;
+	z-index: 1;
 }
 
 .footer p {
@@ -1277,9 +1259,8 @@ form a {
 .col-3 .course-price {
 	font-size: 24px;
 	font-weight: 700;
-	color:#ffffff;
+	color: #ffffff;
 	text-shadow: 2px 2px #00000025;
-
 }
 
 /* col-2-2 */
@@ -1396,11 +1377,11 @@ form a {
 		width: 250px;
 	}
 	.search-box .cancel-icon {
-	position: absolute;
-	right: 20px;
-	top: 50%;
-	transform: translateY(-50%);
-	font-size: 50px;
+		position: absolute;
+		right: 20px;
+		top: 50%;
+		transform: translateY(-50%);
+		font-size: 50px;
 	}
 	.navbar {
 		padding: 10px 20px;
@@ -1440,7 +1421,7 @@ form a {
 		display: block;
 		cursor: pointer;
 	}
-	
+
 	.col-2 {
 		top: 70px;
 	}
@@ -1452,7 +1433,7 @@ form a {
 		/* transform: rotateY(180deg); */
 	}
 
-	.title-1{
+	.title-1 {
 		font-size: 30px;
 	}
 	.title-2 {
@@ -1466,10 +1447,10 @@ form a {
 		flex-direction: column;
 	}
 
-	.header{
+	.header {
 		padding-bottom: 30px;
 	}
-	.header:after{
+	.header:after {
 		bottom: -40px;
 	}
 	.search-field btn {
