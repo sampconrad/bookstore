@@ -351,6 +351,9 @@ p {
 .categories-small-item:hover {
 	transform: translateY(-5px);
 	filter: brightness(110%);
+	background: linear-gradient(120deg, #4787ff 20%, #26e9ff 70%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .categories-small h3 {
@@ -360,6 +363,11 @@ p {
 	/* text-shadow: 2px 2px #00000025; */
 }
 
+/* .categories-small h3:hover {
+background: linear-gradient(120deg, #4787ff 20%, #26e9ff 70%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+} */
 /* .col-3 img {
 	transition: transform 0.5s;
 }
@@ -977,6 +985,10 @@ ul {
 	justify-content: space-between;
 	margin: 100px auto 50px;
 	padding: 0px 15px;
+}
+
+.ver-mais {
+	color: #555;
 }
 
 select {
