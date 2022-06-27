@@ -949,6 +949,12 @@ td img {
 	justify-content: flex-end;
 }
 
+.total-price-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .total-price table {
 	border-top: 3px solid #4787ff;
 	width: 100%;
