@@ -903,7 +903,8 @@ ul {
 }
 
 .filtro-ordenar:hover {
-	transform: translateX(3px);
+	transform: translateY(-3px);
+	filter: brightness(95%);
 }
 
 .filtro-ano {
@@ -918,7 +919,8 @@ ul {
 	transition: 0.5s;
 }
 .filtro-ano:hover {
-	transform: translateX(3px);
+	transform: translateY(-3px);
+	filter: brightness(95%);
 }
 
 .filtro-ano .option-bold {
