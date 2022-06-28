@@ -37,7 +37,7 @@ header .navbar {
 }
 
 .nav-active {
-	background-color: #4b8aff;
+	background-color: #3BB3FF;
 	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
 		rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
@@ -299,7 +299,7 @@ p {
 }
 
 .header {
-	background: radial-gradient(#4b8aff 20%, #4a89ff);
+	background-image: linear-gradient(to left bottom, #00f4ff, #00e5ff, #00d6ff, #00c6ff, #00b5ff, #00b8ff, #00baff, #00bdff, #00d3ff, #00e6ef, #00f5c2, #00ff85);
 }
 
 /* .header .row {
@@ -686,7 +686,7 @@ h4 {
 /* OFFER */
 .offer {
 	/* background: radial-gradient(rgb(63, 153, 255), #4a89ff); */
-	background: linear-gradient(120deg, #ffd446 20%, #fcff46 100%);
+	background-image: linear-gradient(to right bottom, #4eabff, #b69df4, #f092d0, #ff95a3, #ffa67f, #ffad6f, #ffb55e, #ffc04c, #ffb248, #ffa446, #ff9546, #ff8748);
 	margin-top: 80px;
 	padding: 0px 0;
 }
