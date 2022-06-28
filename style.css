@@ -899,7 +899,13 @@ ul {
 	font-size: 12px;
 	border-radius: 5px;
 	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.5s;
 }
+
+.filtro-ordenar:hover {
+	transform: translateX(3px);
+}
+
 .filtro-ano {
 	width: 200px;
 	height: 40px;
@@ -909,7 +915,12 @@ ul {
 	font-size: 12px;
 	border-radius: 5px;
 	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.5s;
 }
+.filtro-ano:hover {
+	transform: translateX(3px);
+}
+
 .filtro-ano .option-bold {
 	font-family: 'Work Sans', cursive;
 	color: #3bb3ff;
