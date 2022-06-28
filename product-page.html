@@ -1,342 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/png" href="favicon.png" />
-		<title>Bookstore - Produto</title>
-		<!-- CSS FILE -->
-		<link rel="stylesheet" href="style.css" />
-		<!-- GOOGLE FONTS -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Work+Sans:wght@200;300;400;500;600;700&display=swap"
-			rel="stylesheet"
-		/>
-		<!-- FONT AWESOME -->
-		<script
-			src="https://kit.fontawesome.com/0d3faf735c.js"
-			crossorigin="anonymous"
-		></script>
-	</head>
-	<body>
-		<!-- NAVIGATION BAR -->
-		<div class="container">
-			<div class="navbar nav-active" id="navbar">
-				<!-- <div class="logo">
-					<img src="img/logo.png" width="125px" alt="" />
-				</div>
-				<nav>
-					<ul id="MenuItems">
-						<li><a href="">Home</a></li>
-						<li><a href="">Products</a></li>
-						<li><a href="">About</a></li>
-						<li><a href="">Contact</a></li>
-						<li><a href="">Account</a></li>
-					</ul>
-				</nav>
-				<img src="img/cart.png" width="30px" height="30px" alt="" />
-				<img
-					src="img/menu.png"
-					class="menu-icon"
-					alt=""
-					onclick="menutoggle()" -->
-				<div class="logo">
-					<a href="index.html"
-						><img src="img/logo-white.png" width="150px" alt=""
-					/></a>
-				</div>
-				<nav>
-					<ul id="MenuItems">
-						<li class="nav-icon"><a href="index.html">Página Inicial</a></li>
-						<li class="nav-icon">
-							<a href="index.html#products">Catálogo</a>
-						</li>
-						<li class="nav-icon">
-							<a href="product-page.html">Página de Produto</a>
-						</li>
-						<!-- <li class="nav-icon"><a href="contact.html">Contact</a></li> -->
-						<li class="nav-icon">
-							<a href="account.html">Criação de Conta</a>
-						</li>
-					</ul>
-				</nav>
-				<a class="nav-icon" href="cart.html"
-					><img src="img/cart.png" width="30px" height="30px" alt=""
-				/></a>
-				<img
-					src="img/menu.png"
-					class="menu-icon"
-					alt=""
-					onclick="menutoggle()"
-				/>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/png" href="favicon.png" />
+	<title>Bookstore - Produto</title>
+	<!-- CSS FILE -->
+	<link rel="stylesheet" href="style.css" />
+	<!-- GOOGLE FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Work+Sans:wght@200;300;400;500;600;700&display=swap"
+		rel="stylesheet" />
+	<!-- FONT AWESOME -->
+	<script src="https://kit.fontawesome.com/0d3faf735c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container">
+		<!-- NAVBAR -->
+		<div class="navbar nav-active" id="navbar">
+			<div class="logo">
+				<a href="index.html"><img src="img/logo-white.png" width="150px" alt="" /></a>
 			</div>
+			<nav>
+				<ul id="MenuItems">
+					<li class="nav-icon"><a href="index.html">Página Inicial</a></li>
+					<li class="nav-icon">
+						<a href="product-page.html">Página de Produto</a>
+					</li>
+					<li class="nav-icon">
+						<a href="account.html">Criação de Conta</a>
+					</li>
+				</ul>
+			</nav>
+			<a class="nav-icon" href="cart.html"><img src="img/cart.png" width="30px" height="30px" alt="" /></a>
+			<img src="img/menu.png" class="menu-icon" alt="" onclick="menutoggle()" />
 		</div>
-
-		<!-- OLD SEARCH BOX -->
-		<!-- <div class="search-box">
-			<button class="btn-search"><i class="fas fa-search"></i></button>
-			<input type="text" class="input-search" placeholder="&nbsp;Pesquise...">
-		</div> -->
-		<!-- END OF OLD SEARCH BOX -->
-
-		<!-- SEARCH BOX -->
-		<div class="search-box">
-			<input type="text" placeholder="Busque na loja..." />
-			<div class="search-icon">
-				<i class="fas fa-search"></i>
-			</div>
-			<div class="cancel-icon">
-				<i class="fas fa-times"></i>
-			</div>
-			<div class="search-data"></div>
+	</div>
+	<!-- SEARCH BOX -->
+	<div class="search-box">
+		<input type="text" placeholder="Busque na loja..." />
+		<div class="search-icon">
+			<i class="fas fa-search"></i>
 		</div>
-		<!-- END OF SEARCH BOX -->
-
-		<!-- SINGLE PRODUCT DETAILS -->
-		<div class="small-container single-product">
-			<div class="row">
-				<div class="col-2-2">
-					<img src="img/comprar1.png" width="100%" alt="" id="productImg" />
-
-					<div class="small-img-row">
-						<div class="small-img-col">
-							<img src="img/comprar1.png" alt="" class="small-img" />
-						</div>
-						<div class="small-img-col">
-							<img src="img/comprar2.png" alt="" class="small-img" />
-						</div>
-						<div class="small-img-col">
-							<img src="img/comprar3.png" alt="" class="small-img" />
-						</div>
-						<div class="small-img-col">
-							<img src="img/comprar4.png" alt="" class="small-img" />
-						</div>
+		<div class="cancel-icon">
+			<i class="fas fa-times"></i>
+		</div>
+		<div class="search-data"></div>
+	</div>
+	<!-- SINGLE PRODUCT DETAILS -->
+	<div class="small-container single-product">
+		<div class="row">
+			<div class="col-2-2">
+				<img src="img/comprar1.png" width="100%" alt="" id="productImg" />
+				<div class="small-img-row">
+					<div class="small-img-col">
+						<img src="img/comprar1.png" alt="" class="small-img" />
 					</div>
-				</div>
-				<div class="col-2-2">
-					<p>Página Inicial / Livros</p>
-					<h1>Box Trilogia O Senhor Dos Anéis</h1>
-					<h2>R$119.80 <small>a vista</small></h2>
-					<p><small>ou em até </small>6x de R$ 28.90</p>
-					<select>
-						<option value="" disabled selected hidden>Parcelas</option>
-						<option>2 x R$ 65.90</option>
-						<option>3 x R$ 46.80</option>
-						<option>4 x R$ 37.90</option>
-						<option>5 x R$ 32.80</option>
-						<option>6 x R$ 28.90</option>
-					</select>
-					<input type="number" value="1" />
-					<a href="cart.html" class="btn blue">Comprar</a>
-
-					<h3>Detalhes Do Produto <i class="fa fa-indent"></i></h3>
-					<br />
-					<p>
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate
-						at, aperiam fuga vero repellat expedita deleniti exercitationem ab
-						dolore harum.
-					</p>
+					<div class="small-img-col">
+						<img src="img/comprar2.png" alt="" class="small-img" />
+					</div>
+					<div class="small-img-col">
+						<img src="img/comprar3.png" alt="" class="small-img" />
+					</div>
+					<div class="small-img-col">
+						<img src="img/comprar4.png" alt="" class="small-img" />
+					</div>
 				</div>
 			</div>
-		</div>
+			<div class="col-2-2">
+				<p>Página Inicial / Livros</p>
+				<h1>Box Trilogia O Senhor Dos Anéis</h1>
+				<div class="rating">
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star-half-stroke"></i>
+				</div>
+				<h2>R$119.80 <small>a vista</small></h2>
+				<p><small>ou em até </small>6x de R$ 28.90</p>
+				<select>
+					<option value="" disabled selected hidden>Parcelas</option>
+					<option>2 x R$ 65.90</option>
+					<option>3 x R$ 46.80</option>
+					<option>4 x R$ 37.90</option>
+					<option>5 x R$ 32.80</option>
+					<option>6 x R$ 28.90</option>
+				</select>
+				<input type="number" value="1" />
+				<a href="cart.html" class="btn blue">Comprar</a>
 
-		<!-- TITLE -->
-		<div class="small-container">
-			<div class="row row-2">
-				<h2>Similares</h2>
-				<a href="index.html#products"
-					><p class="ver-mais">Ver Mais &#8594;</p></a
-				>
-			</div>
-		</div>
-
-		<!-- PRODUCTS -->
-		<div class="small-container">
-			<div class="row">
-				<div class="col-4">
-					<a href="product-page.html"><img src="img/ebook5.jpg" alt="" /></a>
-					<a href="product-page.html"><h4>Memórias Póstumas de Brás</h4></a>
-					<div class="rating">
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star-half-stroke"></i>
-					</div>
-					<h2 class="price-1">R$50.00</h2>
-					<h3 class="price-2">ou 6x de R$ 9.30</h3>
-				</div>
-				<div class="col-4">
-					<a href="product-page.html"><img src="img/ebook6.jpg" alt="" /></a>
-					<a href="product-page.html"><h4>JavaScript: O Guia Definitivo</h4></a>
-					<div class="rating">
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-regular fa-star"></i>
-					</div>
-					<h2 class="price-1">R$90.00</h2>
-					<h3 class="price-2">ou 6x de R$ 16.80</h3>
-				</div>
-				<div class="col-4">
-					<a href="product-page.html"><img src="img/ebook7.jpg" alt="" /></a>
-					<a href="product-page.html"><h4>Lógica Para Leigos</h4></a>
-					<div class="rating">
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star-half-stroke"></i>
-						<i class="fa-regular fa-star"></i>
-					</div>
-					<h2 class="price-1">R$70.00</h2>
-					<h3 class="price-2">ou 6x de R$ 13.50</h3>
-				</div>
-				<div class="col-4">
-					<a href="product-page.html"><img src="img/ebook8.jpg" alt="" /></a>
-					<a href="product-page.html"><h4>Fantástico Mundo Números</h4></a>
-					<div class="rating">
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star"></i>
-						<i class="fa-solid fa-star-half-stroke"></i>
-					</div>
-					<h2 class="price-1">R$65.00</h2>
-					<h3 class="price-2">ou 6x de R$ 11.80</h3>
-				</div>
-			</div>
-		</div>
-
-		<!-- FOOTER -->
-		<div class="footer">
-			<div class="container">
-				<div class="row">
-					<div class="footer-col-1">
-						<h3>Baixe Nosso App</h3>
-						<p>Baixe nosso App para dispositivos Android e iOS.</p>
-						<div class="app-logo">
-							<a style="cursor: pointer"
-								><img src="img/play-store.png" alt=""
-							/></a>
-							<a style="cursor: pointer"
-								><img src="img/app-store.png" alt=""
-							/></a>
-						</div>
-					</div>
-					<div class="footer-col-2">
-						<a href="#"><img src="img/logo-white.png" alt="" /></a>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Praesentium, nisi.
-						</p>
-					</div>
-					<div class="footer-col-3">
-						<h3>Links Úteis</h3>
-						<ul>
-							<li>Missão</li>
-							<li>Unidades</li>
-							<li>Atendimento</li>
-							<li>Termos & Condições</li>
-						</ul>
-					</div>
-					<div class="footer-col-4">
-						<h3>Nos Siga</h3>
-						<ul>
-							<li>Facebook</li>
-							<li>Twitter</li>
-							<li>Instagram</li>
-							<li>YouTube</li>
-						</ul>
-					</div>
-				</div>
-				<hr />
-				<p class="copyright">
-					Desenvolvido por
-					<a href="https://www.sampconrad.com/">Conrado Sampaio</a>
+				<h3>Detalhes Do Produto <i class="fa fa-indent"></i></h3>
+				<br />
+				<p>
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate
+					at, aperiam fuga vero repellat expedita deleniti exercitationem ab
+					dolore harum.
 				</p>
 			</div>
 		</div>
-
-		<!-- JS FOR TOGGLE MENU -->
-		<script>
-			let MenuItems = document.getElementById('MenuItems');
-			MenuItems.style.maxHeight = '0px';
-			function menutoggle() {
-				if (MenuItems.style.maxHeight == '0px') {
-					MenuItems.style.maxHeight = '200px';
-				} else {
-					MenuItems.style.maxHeight = '0px';
-				}
-			}
-		</script>
-		<!-- JS FOR STICKY NAVBAR -->
-		<!-- <script>
-			const navbar = document.getElementById('navbar');
-			window.onscroll = () => {
-				if (window.scrollY > 50) {
-					navbar.classList.add('nav-active');
-				} else {
-					navbar.classList.remove('nav-active');
-				}
-			};
-		</script> -->
-
-		<!-- JS FOR PRODUCT GALLERY -->
-		<script>
-			const productImg = document.getElementById('productImg');
-			const smallImg = document.getElementsByClassName('small-img');
-
-			smallImg[0].onclick = function () {
-				productImg.src = smallImg[0].src;
-			};
-			smallImg[1].onclick = function () {
-				productImg.src = smallImg[1].src;
-			};
-			smallImg[2].onclick = function () {
-				productImg.src = smallImg[2].src;
-			};
-			smallImg[3].onclick = function () {
-				productImg.src = smallImg[3].src;
-			};
-		</script>
-		<!-- JS FOR SEARCH BOX -->
-		<script>
-			const searchBox = document.querySelector('.search-box');
-			const searchBtn = document.querySelector('.search-icon');
-			const cancelBtn = document.querySelector('.cancel-icon');
-			const searchInput = document.querySelector('input');
-			const searchData = document.querySelector('.search-data');
-			searchBtn.onclick = () => {
-				searchBox.classList.add('active');
-				searchBtn.classList.add('active');
-				searchInput.classList.add('active');
-				cancelBtn.classList.add('active');
-				searchInput.focus();
-				if (searchInput.value != '') {
-					var values = searchInput.value;
-					searchData.classList.remove('active');
-					searchData.innerHTML =
-						'You just typed ' +
-						"<span style='font-weight: 500;'>" +
-						values +
-						'</span>';
-				} else {
-					searchData.textContent = '';
-				}
-			};
-			cancelBtn.onclick = () => {
-				searchBox.classList.remove('active');
-				searchBtn.classList.remove('active');
-				searchInput.classList.remove('active');
-				cancelBtn.classList.remove('active');
-				searchData.classList.toggle('active');
-				searchInput.value = '';
-			};
-		</script>
-	</body>
+	</div>
+	<!-- TITLE -->
+	<div class="small-container">
+		<div class="row row-2">
+			<h2>Similares</h2>
+			<a href="index.html#products">
+				<p class="ver-mais">Ver Mais &#8594;</p>
+			</a>
+		</div>
+	</div>
+	<!-- SIMILAR PRODUCTS -->
+	<div class="small-container">
+		<div class="row">
+			<div class="col-4">
+				<a href="product-page.html"><img src="img/ebook5.jpg" alt="" /></a>
+				<a href="product-page.html">
+					<h4>Memórias Póstumas de Brás</h4>
+				</a>
+				<div class="rating">
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star-half-stroke"></i>
+				</div>
+				<h2 class="price-1">R$50.00</h2>
+				<h3 class="price-2">ou 6x de R$ 9.30</h3>
+			</div>
+			<div class="col-4">
+				<a href="product-page.html"><img src="img/ebook6.jpg" alt="" /></a>
+				<a href="product-page.html">
+					<h4>JavaScript: O Guia Definitivo</h4>
+				</a>
+				<div class="rating">
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-regular fa-star"></i>
+				</div>
+				<h2 class="price-1">R$90.00</h2>
+				<h3 class="price-2">ou 6x de R$ 16.80</h3>
+			</div>
+			<div class="col-4">
+				<a href="product-page.html"><img src="img/ebook7.jpg" alt="" /></a>
+				<a href="product-page.html">
+					<h4>Lógica Para Leigos</h4>
+				</a>
+				<div class="rating">
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star-half-stroke"></i>
+					<i class="fa-regular fa-star"></i>
+				</div>
+				<h2 class="price-1">R$70.00</h2>
+				<h3 class="price-2">ou 6x de R$ 13.50</h3>
+			</div>
+			<div class="col-4">
+				<a href="product-page.html"><img src="img/ebook8.jpg" alt="" /></a>
+				<a href="product-page.html">
+					<h4>Fantástico Mundo Números</h4>
+				</a>
+				<div class="rating">
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star-half-stroke"></i>
+				</div>
+				<h2 class="price-1">R$65.00</h2>
+				<h3 class="price-2">ou 6x de R$ 11.80</h3>
+			</div>
+		</div>
+	</div>
+	<!-- FOOTER -->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Baixe Nosso App</h3>
+					<p>Baixe nosso App para dispositivos Android e iOS.</p>
+					<div class="app-logo">
+						<a style="cursor: pointer"><img src="img/play-store.png" alt="" /></a>
+						<a style="cursor: pointer"><img src="img/app-store.png" alt="" /></a>
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<a href="#"><img src="img/logo-white.png" alt="" /></a>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Praesentium, nisi.
+					</p>
+				</div>
+				<div class="footer-col-3">
+					<h3>Links Úteis</h3>
+					<ul>
+						<li>Missão</li>
+						<li>Unidades</li>
+						<li>Atendimento</li>
+						<li>Termos & Condições</li>
+					</ul>
+				</div>
+				<div class="footer-col-4">
+					<h3>Nos Siga</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>Instagram</li>
+						<li>YouTube</li>
+					</ul>
+				</div>
+			</div>
+			<hr />
+			<p class="copyright">
+				Desenvolvido por
+				<a href="https://www.sampconrad.com/">Conrado Sampaio</a>
+			</p>
+		</div>
+	</div>
+	<!-- JAVASCRIPT -->
+	<script src="script.js"></script>
+</body>
 </html>

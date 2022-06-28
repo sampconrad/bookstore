@@ -1,245 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" type="image/png" href="favicon.png" />
-		<title>Bookstore | Teste Objetivo</title>
-		<!-- CSS FILE -->
-		<link rel="stylesheet" href="style.css" />
-		<!-- GOOGLE FONTS -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Londrina+Sketch&family=Poppins:wght@200;300;400;500;600;700&family=Work+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-		<!-- FONT AWESOME -->
-		<script
-			src="https://kit.fontawesome.com/0d3faf735c.js"
-			crossorigin="anonymous"
-		></script>
-	</head>
-	<body>
-		<!-- NAVIGATION BAR -->
-		<div class="header">
-			<div class="container">
-				<div class="navbar" id="navbar">
-					<div class="logo">
-						<a href="index.html"
-							><img src="img/logo-white.png" width="150px" alt=""
-						/></a>
-					</div>
-					<nav>
-						<ul id="MenuItems">
-							<li class="nav-icon"><a href="index.html">Página Inicial</a></li>
-							<li class="nav-icon">
-								<a href="#products">Catálogo</a>
-							</li>
-							<li class="nav-icon">
-								<a href="product-page.html">Página de Produto</a>
-							</li>
-							<!-- <li class="nav-icon"><a href="contact.html">Contact</a></li> -->
-							<li class="nav-icon"><a href="account.html">Criação de Conta</a></li>
-						</ul>
-					</nav>
-					<a class="nav-icon" href="cart.html"
-						><img src="img/cart.png" width="30px" height="30px" alt=""
-					/></a>
-					<img
-						src="img/menu.png"
-						class="menu-icon"
-						alt=""
-						onclick="menutoggle()"
-					/>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/png" href="favicon.png" />
+	<title>Bookstore | Teste Objetivo</title>
+	<!-- CSS FILE -->
+	<link rel="stylesheet" href="style.css" />
+	<!-- GOOGLE FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Londrina+Sketch&family=Poppins:wght@200;300;400;500;600;700&family=Work+Sans:wght@200;300;400;500;600;700&display=swap"
+		rel="stylesheet">
+	<!-- FONT AWESOME -->
+	<script src="https://kit.fontawesome.com/0d3faf735c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<!-- NAVBAR -->
+			<div class="navbar" id="index-navbar">
+				<div class="logo">
+					<a href="index.html"><img src="img/logo-white.png" width="150px" alt="" /></a>
 				</div>
-				<div class="row">
-					<div class="col-2">
-						<h1 class="title-1">Tudo para seu ensino</h1>
-						<h1 class="title-2">Em um lugar</h1>
-						<!-- <h1>Give Your Workout <br />A New Style</h1> -->
-						<p>
-							Procurando do <span id="A">A</span> ao <span id="Z">Z</span> ? Vem que aqui na Bookstore tem!
-							<br />
-							De tudo para você iniciar o semestre com o pé direito.
-						</p>
-						<div class="search-field">
+				<nav>
+					<ul id="MenuItems">
+						<li class="nav-icon"><a href="index.html">Página Inicial</a></li>
+						<li class="nav-icon">
+							<a href="product-page.html">Página de Produto</a>
+						</li>
+						<li class="nav-icon"><a href="account.html">Criação de Conta</a></li>
+					</ul>
+				</nav>
+				<a class="nav-icon" href="cart.html"><img src="img/cart.png" width="30px" height="30px" alt="" /></a>
+				<img src="img/menu.png" class="menu-icon" alt="" onclick="menutoggle()" />
+			</div>
+			<!-- HERO -->
+			<div class="row">
+				<div class="col-2">
+					<h1 class="title-1">Tudo para seu ensino,</h1>
+					<h1 class="title-2">Em um lugar!</h1>
+					<p>
+						Procurando do <span id="A">A</span> ao <span id="Z">Z</span> ? Vem que aqui na Bookstore tem!
+						<br />
+						De tudo para você iniciar o semestre com o pé direito.
+					</p>
+					<div class="search-field">
 						<a href="#categories" class="btn">Confira &#8594;</a>
-						</div>
 					</div>
-					<div class="col-2">
-						<img src="img/header4.png" alt="" />
-					</div>
+				</div>
+				<div class="col-2">
+					<img src="img/header4.png" alt="" />
 				</div>
 			</div>
 		</div>
-		<!-- OLD SEARCH BOX -->
-		<!-- <div class="search-box">
-			<button class="btn-search"><i class="fas fa-search"></i></button>
-			<input type="text" class="input-search" placeholder="&nbsp;Pesquise...">
-		</div> -->
-		<!-- END OF OLD SEARCH BOX -->
-
-		<!-- SEARCH BOX -->
-		<div class="search-box">
-			<input type="text" placeholder="Busque na loja...">
-			<div class="search-icon">
-				<i class="fas fa-search"></i>
-			</div>
-			<div class="cancel-icon">
-				<i class="fas fa-times"></i>
-			</div>
-			<div class="search-data">
-			</div>
+	</div>
+	<!-- SEARCH BOX -->
+	<div class="search-box">
+		<input type="text" placeholder="Busque na loja...">
+		<div class="search-icon">
+			<i class="fas fa-search"></i>
 		</div>
-		<!-- END OF SEARCH BOX -->
-
-		<!-- FEATURED CATEGORIES -->
-		<!-- <div class="categories">
-			<div class="small-container">
-				<div class="row">
-					<div class="col-3">
-						<a class="col-3-a" href="catalogue.html">
-							<img src="img/category-1.jpg" alt="" />
-							<h2>Material</h2>
-						</a>
-					</div>
-					<div class="col-3">
-						<a class="col-3-a" href="catalogue.html"><img src="img/category-2.jpg" alt="" />
-							<h2>Cursos</h2>
-						</a>
-					</div>
-					<div class="col-3">
-						<a class="col-3-a" href="catalogue.html"><img src="img/category-3.jpg" alt="" />
-							<h2>Livros</h2>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div> -->
-
-		<!-- FEATURED CATEGORIES -->
-		<section id="categories">
+		<div class="cancel-icon">
+			<i class="fas fa-times"></i>
+		</div>
+		<div class="search-data">
+		</div>
+	</div>
+	<!-- FEATURED CATEGORIES -->
+	<section id="categories">
 		<div class="categories">
 			<div class="small-container">
 				<div class="row">
 					<div class="col-3">
 						<a class="col-3-a" href="#e-book">
-						<div id='category-1'>
-							<h3>
-								<span class="category-top">LIV</span>
-								<br/>
-								<span class="category-bottom">ROS</span>
-							</h3>
-							<p>
-								<span class="p-top">Nova coleção 2022.2</span>
-								<br/>
-								<span class="p-bottom">Revisada &<br/>Atualizada</span>
-							</p>
-						</div></a>
+							<div id='category-1'>
+								<h3>
+									<span class="category-top">LIV</span>
+									<br />
+									<span class="category-bottom">ROS</span>
+								</h3>
+								<p>
+									<span class="p-top">Nova coleção 2022.2</span>
+									<br />
+									<span class="p-bottom">Revisada &<br />Atualizada</span>
+								</p>
+							</div>
+						</a>
 					</div>
 					<div class="col-3">
 						<a class="col-3-a" href="#e-book">
-						<div id='category-2'>
+							<div id='category-2'>
 								<h3>
-								<span class="category-top">MATE</span>
-								<br/>
-								<span class="category-bottom">RIAL</span>
-							</h3>
-						<p>
-								<span class="p-top">De A a Z</span>
-								<br/>
-								<span class="p-bottom">Precisou?<br/>Aqui Tem!</span>
-							</p>
-						</div></a>
+									<span class="category-top">MATE</span>
+									<br />
+									<span class="category-bottom">RIAL</span>
+								</h3>
+								<p>
+									<span class="p-top">De A a Z</span>
+									<br />
+									<span class="p-bottom">Precisou?<br />Aqui Tem!</span>
+								</p>
+							</div>
+						</a>
 					</div>
 					<div class="col-3">
 						<a class="col-3-a" href="#cursos">
-						<div id='category-3'>
-																					<h3>
-								<span class="category-top">CUR</span>
-								<br/>
-								<span class="category-bottom">SOS</span>
-							</h3>
-							<p>
-								<span class="p-top">Preparatórios e Revisões</span>
-								<br/>
-								<span class="p-bottom">ENEM &<br/>Vestibular</span>
-							</p>
-						</div></a>
+							<div id='category-3'>
+								<h3>
+									<span class="category-top">CUR</span>
+									<br />
+									<span class="category-bottom">SOS</span>
+								</h3>
+								<p>
+									<span class="p-top">Preparatórios e Revisões</span>
+									<br />
+									<span class="p-bottom">ENEM &<br />Vestibular</span>
+								</p>
+							</div>
+						</a>
 						</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		</section>
-		<!-- SMALL CATEGORIES -->
-		<div class="categories-small">
-			<div class="small-container">
-				<div class="row row-categories">
-						<div  id="arrow-left">
-							<img class="arrow-left" src="img/arrow.png" alt=""
-						/>
-						</div>
-						<div class="categories-small-item">
-							<a href="#e-book">
-							<img src="img/categoryA.png" alt=""
-						/></a>
-						<h3>Mochilas</h3>
-						</div>
-						<div class="categories-small-item">
-							<a href="#e-book">
-							<img src="img/categoryb.png" alt=""
-						/></a>
-						<h3>Leitores</h3>
-						</div>
-						<div class="categories-small-item">
-							<a href="#e-book">
-							<img src="img/categoryc.png" alt=""
-						/></a>
-						<h3>Cadernetas</h3>
-						</div>
-						<div class="categories-small-item" id="csi-d">
-							<a href="#e-book">
-							<img src="img/categoryd.png" alt=""
-						/></a>
-						<h3>Canetas</h3>
-						</div>
-						<div class="categories-small-item" id="csi-f">
-							<a href="#e-book">
-							<img src="img/categoryf.png" alt=""
-						/></a>
-						<h3>Acessórios</h3>
-						</div>
-						<div id="arrow-right">
-							<img class="arrow-right" src="img/arrow.png" alt=""
-						/>
-						</div>
+	</section>
+	<!-- SMALL CATEGORIES -->
+	<div class="categories-small">
+		<div class="small-container">
+			<div class="row row-categories">
+				<div id="arrow-left">
+					<img class="arrow-left" src="img/arrow.png" alt="" />
+				</div>
+				<div class="categories-small-item">
+					<a href="#e-book">
+						<img src="img/categoryA.png" alt="" /></a>
+					<h3>Mochilas</h3>
+				</div>
+				<div class="categories-small-item">
+					<a href="#e-book">
+						<img src="img/categoryb.png" alt="" /></a>
+					<h3>Leitores</h3>
+				</div>
+				<div class="categories-small-item">
+					<a href="#e-book">
+						<img src="img/categoryc.png" alt="" /></a>
+					<h3>Cadernetas</h3>
+				</div>
+				<div class="categories-small-item" id="csi-d">
+					<a href="#e-book">
+						<img src="img/categoryd.png" alt="" /></a>
+					<h3>Canetas</h3>
+				</div>
+				<div class="categories-small-item" id="csi-f">
+					<a href="#e-book">
+						<img src="img/categoryf.png" alt="" /></a>
+					<h3>Acessórios</h3>
+				</div>
+				<div id="arrow-right">
+					<img class="arrow-right" src="img/arrow.png" alt="" />
 				</div>
 			</div>
 		</div>
-			
-		
-		<!-- PRODUCTS -->
-		<section id="products">
-			<div class="small-container">
-				<div class="row row-2">
-				<h2>Catálogo</h2>
-				<select>
-					<option value="" disabled selected hidden>Ordenar</option>
-					<option>Por Preço</option>
-					<option>Por Demanda</option>
-					<option>Por Estrela</option>
-					<option>Por Desconto</option>
+	</div>
+	<!-- CATALOGUE -->
+	<section id="products">
+		<div class="small-container">
+			<div class="row row-2">
+				<div class="filter1"><h2>Catálogo</h2></div>
+				<div class="filter2">			
+				<select class="filtro-ano">
+					<option class="option-bold" value="" disabled selected hidden>Filtrar Por Ano</option>
+					<option class="option-bold" disabled >PRÉ-VESTIBULAR</option>
+					<option>ENEM</option>
+					<option>ITA | IME</option>
+					<option>USP | UNICAMP</option>
+					<option class="option-bold" disabled >ENSINO MÉDIO</option>
+					<option>3° Ano</option>
+					<option>2° Ano</option>
+					<option>1° Ano</option>
+					<option class="option-bold" disabled >ENSINO FUNDAMENTAL II</option>
+					<option>9° Série</option>
+					<option>8° Série</option>
+					<option>7° Série</option>
+					<option>6° Série</option>
+					<option class="option-bold" disabled >ENSINO FUNDAMENTAL I</option>
+					<option>5° Série</option>
+					<option>4° Série</option>
+					<option>3° Série</option>
+					<option>2° Série</option>
+					<option>1° Série</option>
+					<option class="option-bold" disabled >ENSINO INFANTIL</option>
+					<option>Infantil 5</option>
+					<option>Infantil 4</option>
+					<option>Infantil 3</option>
+					<option>Infantil 2</option>
+					<option>Infantil 1</option>
 				</select>
+				</div>
+				<div>
+				<select class="filtro-ordenar">
+					<option value="" disabled selected hidden>Ordenar Por</option>
+					<option>Por Preço</option>
+					<option>Por Popularidade</option>
+					<option>Por Desconto</option>
+					<option>Por Data Adicionado</option>
+				</select>
+				</div>
 			</div>
-				<!-- FEATURED PRODUCTS -->
-				<!-- <h2 class="title">Mais Vendidos</h2>
+			<!-- FEATURED PRODUCTS -->
+			<section id="e-book">
 				<div class="row">
 					<div class="col-4">
-						<a href="product-page.html"
-							><img src="img/product1.jpg" alt=""
-						/></a>
-						<a href="product-page.html"><h4>Canetas Sortidas</h4></a>
+						<a href="product-page.html"><img src="img/ebook5.jpg" alt="" /></a>
+						<a href="product-page.html">
+							<h4>Memórias Póstumas de Brás</h4>
+						</a>
 						<div class="rating">
 							<i class="fa-solid fa-star"></i>
 							<i class="fa-solid fa-star"></i>
@@ -247,13 +226,14 @@
 							<i class="fa-solid fa-star"></i>
 							<i class="fa-solid fa-star-half-stroke"></i>
 						</div>
-						<h2 class="price-1">R$20.00</h2><h3 class="price-2">ou 6x de R$ 3.80</h3>
+						<h2 class="price-1">R$50.00</h2>
+						<h3 class="price-2">ou 6x de R$ 9.30</h3>
 					</div>
 					<div class="col-4">
-						<a href="product-page.html"
-							><img src="img/product2.jpg" alt=""
-						/></a>
-						<a href="product-page.html"><h4>Kit Estudante</h4></a>
+						<a href="product-page.html"><img src="img/ebook6.jpg" alt="" /></a>
+						<a href="product-page.html">
+							<h4>JavaScript: O Guia Definitivo</h4>
+						</a>
 						<div class="rating">
 							<i class="fa-solid fa-star"></i>
 							<i class="fa-solid fa-star"></i>
@@ -261,13 +241,14 @@
 							<i class="fa-solid fa-star"></i>
 							<i class="fa-regular fa-star"></i>
 						</div>
-						<h2 class="price-1">R$95.00</h2><h3 class="price-2">ou 6x de R$ 17.90</h3>
+						<h2 class="price-1">R$90.00</h2>
+						<h3 class="price-2">ou 6x de R$ 16.80</h3>
 					</div>
 					<div class="col-4">
-						<a href="product-page.html"
-							><img src="img/category3.jpg" alt=""
-						/></a>
-						<a href="product-page.html"><h4>Livros Básicos</h4></a>
+						<a href="product-page.html"><img src="img/ebook7.jpg" alt="" /></a>
+						<a href="product-page.html">
+							<h4>Lógica Para Leigos</h4>
+						</a>
 						<div class="rating">
 							<i class="fa-solid fa-star"></i>
 							<i class="fa-solid fa-star"></i>
@@ -275,13 +256,14 @@
 							<i class="fa-solid fa-star-half-stroke"></i>
 							<i class="fa-regular fa-star"></i>
 						</div>
-						<h2 class="price-1">R$200.00</h2><h3 class="price-2">ou 6x de R$ 34.80</h3>
+						<h2 class="price-1">R$70.00</h2>
+						<h3 class="price-2">ou 6x de R$ 13.50</h3>
 					</div>
 					<div class="col-4">
-						<a href="product-page.html"
-							><img src="img/product-12.jpg" alt=""
-						/></a>
-						<a href="product-page.html"><h4>Moletom Farda Preto</h4></a>
+						<a href="product-page.html"><img src="img/ebook8.jpg" alt="" /></a>
+						<a href="product-page.html">
+							<h4>Fantástico Mundo Números</h4>
+						</a>
 						<div class="rating">
 							<i class="fa-solid fa-star"></i>
 							<i class="fa-solid fa-star"></i>
@@ -289,82 +271,19 @@
 							<i class="fa-solid fa-star"></i>
 							<i class="fa-solid fa-star-half-stroke"></i>
 						</div>
-						<h2 class="price-1">R$85.00</h2><h3 class="price-2">ou 6x de R$ 15.70</h3>
-					</div>
-				</div> -->
-
-				<!-- FEATURED PRODUCTS -->
-				<section id="e-book">
-				<!-- <h2 class="title">Novidades</h2> -->
-				<div class="row">
-					<div class="col-4">
-						<a href="product-page.html"
-							><img src="img/ebook5.jpg" alt=""
-						/></a>
-						<a href="product-page.html"><h4>Memórias Póstumas de Brás</h4></a>
-						<div class="rating">
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star-half-stroke"></i>
-						</div>
-						<h2 class="price-1">R$50.00</h2><h3 class="price-2">ou 6x de R$ 9.30</h3>
-					</div>
-					<div class="col-4">
-						<a href="product-page.html"
-							><img src="img/ebook6.jpg" alt=""
-						/></a>
-						<a href="product-page.html"><h4>JavaScript: O Guia Definitivo</h4></a>
-						<div class="rating">
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-regular fa-star"></i>
-						</div>
-						<h2 class="price-1">R$90.00</h2><h3 class="price-2">ou 6x de R$ 16.80</h3>
-					</div>
-					<div class="col-4">
-						<a href="product-page.html"
-							><img src="img/ebook7.jpg" alt=""
-						/></a>
-						<a href="product-page.html"><h4>Lógica Para Leigos</h4></a>
-						<div class="rating">
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star-half-stroke"></i>
-							<i class="fa-regular fa-star"></i>
-						</div>
-						<h2 class="price-1">R$70.00</h2><h3 class="price-2">ou 6x de R$ 13.50</h3>
-					</div>
-					<div class="col-4">
-						<a href="product-page.html"
-							><img src="img/ebook8.jpg" alt=""
-						/></a>
-						<a href="product-page.html"><h4>Fantástico Mundo Números</h4></a>
-						<div class="rating">
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star-half-stroke"></i>
-						</div>
-						<h2 class="price-1">R$65.00</h2><h3 class="price-2">ou 6x de R$ 11.80</h3>
+						<h2 class="price-1">R$65.00</h2>
+						<h3 class="price-2">ou 6x de R$ 11.80</h3>
 					</div>
 				</div>
-				</section>
-
-				<!-- LATEST PRODUCTS -->
-				<section id="novidades">
-				<!-- <h2 class="title">Papelaria</h2> -->
+			</section>
+			<!-- LATEST PRODUCTS -->
+			<section id="novidades">
 				<div class="row">
 					<div class="col-4">
-						<a href="product-page.html"
-							><img src="img/product1.jpg" alt=""
-						/></a>
-						<a href="product-page.html"><h4>Canetas Sortidas</h4></a>
+						<a href="product-page.html"><img src="img/product1.jpg" alt="" /></a>
+						<a href="product-page.html">
+							<h4>Canetas Sortidas</h4>
+						</a>
 						<div class="rating">
 							<i class="fa-solid fa-star"></i>
 							<i class="fa-solid fa-star"></i>
@@ -372,13 +291,14 @@
 							<i class="fa-solid fa-star"></i>
 							<i class="fa-solid fa-star"></i>
 						</div>
-						<h2 class="price-1">R$20.00</h2><h3 class="price-2">ou 6x de R$ 3.80</h3>
+						<h2 class="price-1">R$20.00</h2>
+						<h3 class="price-2">ou 6x de R$ 3.80</h3>
 					</div>
 					<div class="col-4">
-						<a href="product-page.html"
-							><img src="img/product14.jpg" alt=""
-						/></a>
-						<a href="product-page.html"><h4>Caderneta Anotações</h4></a>
+						<a href="product-page.html"><img src="img/product14.jpg" alt="" /></a>
+						<a href="product-page.html">
+							<h4>Caderneta Anotações</h4>
+						</a>
 						<div class="rating">
 							<i class="fa-solid fa-star"></i>
 							<i class="fa-solid fa-star"></i>
@@ -386,13 +306,14 @@
 							<i class="fa-solid fa-star-half-stroke"></i>
 							<i class="fa-regular fa-star"></i>
 						</div>
-						<h2 class="price-1">R$20.00</h2><h3 class="price-2">ou 6x de R$ 3.80</h3>
+						<h2 class="price-1">R$20.00</h2>
+						<h3 class="price-2">ou 6x de R$ 3.80</h3>
 					</div>
 					<div class="col-4">
-						<a href="product-page.html"
-							><img src="img/product13.jpg" alt=""
-						/></a>
-						<a href="product-page.html"><h4>Lápis Colorido</h4></a>
+						<a href="product-page.html"><img src="img/product13.jpg" alt="" /></a>
+						<a href="product-page.html">
+							<h4>Lápis Colorido</h4>
+						</a>
 						<div class="rating">
 							<i class="fa-solid fa-star"></i>
 							<i class="fa-solid fa-star"></i>
@@ -400,13 +321,14 @@
 							<i class="fa-solid fa-star-half-stroke"></i>
 							<i class="fa-regular fa-star"></i>
 						</div>
-						<h2 class="price-1">R$15.00</h2><h3 class="price-2">ou 6x de R$ 2.70</h3>
+						<h2 class="price-1">R$15.00</h2>
+						<h3 class="price-2">ou 6x de R$ 2.70</h3>
 					</div>
 					<div class="col-4">
-						<a href="product-page.html"
-							><img src="img/product12.jpg" alt=""
-						/></a>
-						<a href="product-page.html"><h4>Planilha</h4></a>
+						<a href="product-page.html"><img src="img/product12.jpg" alt="" /></a>
+						<a href="product-page.html">
+							<h4>Planilha</h4>
+						</a>
 						<div class="rating">
 							<i class="fa-solid fa-star"></i>
 							<i class="fa-solid fa-star"></i>
@@ -414,13 +336,14 @@
 							<i class="fa-regular fa-star"></i>
 							<i class="fa-regular fa-star"></i>
 						</div>
-						<h2 class="price-1">R$17.00</h2><h3 class="price-2">ou 6x de R$ 2.90</h3>
+						<h2 class="price-1">R$17.00</h2>
+						<h3 class="price-2">ou 6x de R$ 2.90</h3>
 					</div>
 					<div class="col-4">
-						<a href="product-page.html"
-							><img src="img/product8.jpg" alt=""
-						/></a>
-						<a href="product-page.html"><h4>Caderneta</h4></a>
+						<a href="product-page.html"><img src="img/product8.jpg" alt="" /></a>
+						<a href="product-page.html">
+							<h4>Caderneta</h4>
+						</a>
 						<div class="rating">
 							<i class="fa-solid fa-star"></i>
 							<i class="fa-solid fa-star"></i>
@@ -428,15 +351,14 @@
 							<i class="fa-solid fa-star"></i>
 							<i class="fa-solid fa-star-half-stroke"></i>
 						</div>
-						<h2 class="price-1">R$40.00</h2><h3 class="price-2">ou 6x de R$ 6.90</h3>
+						<h2 class="price-1">R$40.00</h2>
+						<h3 class="price-2">ou 6x de R$ 6.90</h3>
 					</div>
 					<div class="col-4">
-						<a href="product-page.html"
-							><img src="img/product6.jpg" alt=""
-						/></a>
-						<a href="product-page.html"
-							><h4>Fita Adesiva</h4></a
-						>
+						<a href="product-page.html"><img src="img/product6.jpg" alt="" /></a>
+						<a href="product-page.html">
+							<h4>Fita Adesiva</h4>
+						</a>
 						<div class="rating">
 							<i class="fa-solid fa-star"></i>
 							<i class="fa-solid fa-star"></i>
@@ -444,13 +366,14 @@
 							<i class="fa-solid fa-star"></i>
 							<i class="fa-regular fa-star"></i>
 						</div>
-						<h2 class="price-1">R$15.00</h2><h3 class="price-2">ou 6x de R$ 2.50</h3>
+						<h2 class="price-1">R$15.00</h2>
+						<h3 class="price-2">ou 6x de R$ 2.50</h3>
 					</div>
 					<div class="col-4">
-						<a href="product-page.html"
-							><img src="img/product11.jpg" alt=""
-						/></a>
-						<a href="product-page.html"><h4>Cadernos Sortidos</h4></a>
+						<a href="product-page.html"><img src="img/product11.jpg" alt="" /></a>
+						<a href="product-page.html">
+							<h4>Cadernos Sortidos</h4>
+						</a>
 						<div class="rating">
 							<i class="fa-solid fa-star"></i>
 							<i class="fa-solid fa-star"></i>
@@ -458,13 +381,14 @@
 							<i class="fa-solid fa-star-half-stroke"></i>
 							<i class="fa-regular fa-star"></i>
 						</div>
-						<h2 class="price-1">R$50.00</h2><h3 class="price-2">ou 6x de R$ 9.30</h3>
+						<h2 class="price-1">R$50.00</h2>
+						<h3 class="price-2">ou 6x de R$ 9.30</h3>
 					</div>
 					<div class="col-4">
-						<a href="product-page.html"
-							><img src="img/product2.jpg" alt=""
-						/></a>
-						<a href="product-page.html"><h4>Kit Volta As Aulas</h4></a>
+						<a href="product-page.html"><img src="img/product2.jpg" alt="" /></a>
+						<a href="product-page.html">
+							<h4>Kit Volta As Aulas</h4>
+						</a>
 						<div class="rating">
 							<i class="fa-solid fa-star"></i>
 							<i class="fa-solid fa-star"></i>
@@ -472,20 +396,21 @@
 							<i class="fa-solid fa-star"></i>
 							<i class="fa-regular fa-star"></i>
 						</div>
-						<h2 class="price-1">R$125.00</h2><h3 class="price-2">ou 6x de R$ 21.80</h3>
+						<h2 class="price-1">R$125.00</h2>
+						<h3 class="price-2">ou 6x de R$ 21.80</h3>
 					</div>
 				</div>
-							<div class="page-btn">
-				<span>1</span>
-				<span>2</span>
-				<span>3</span>
-				<span>4</span>
-				<span>&#8594;</span>
-			</div>
-			</div>
-		</section>
-		<!-- OFFERS -->
-		<section id="cursos">
+				<div class="page-btn">
+					<span>1</span>
+					<span>2</span>
+					<span>3</span>
+					<span>4</span>
+					<span>&#8594;</span>
+				</div>
+		</div>
+	</section>
+	<!-- FEATURED -->
+	<section id="cursos">
 		<div class="offer">
 			<div class="small-container">
 				<div class="row">
@@ -497,253 +422,183 @@
 						<img id="keepedu" src="img/keepedu.png" alt="" />
 						<br />
 						<!-- <h1>Keep Edu</h1> -->
-						<small
-							>Sistema de ensino online. <br />Seus estudos em dia. Em qualquer lugar, a qualquer hora!</small
-						>
+						<small>Sistema de ensino online. <br />Seus estudos em dia. Em qualquer lugar, a qualquer hora!</small>
 						<br />
 						<a href="#review" class="btn blue">Nossos Cursos &#8594;</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		</section>
-
-		<!-- REVIEWS -->
-		<section id="review" class="review">
-			<!-- <h2 class="title">Cursos</h2> -->
-			<div class="small-container">
-				<div class="row">
-					<div class="col-3 course1">						
-						<!-- <img src="img/vacation.png" alt="" /> -->
-						<h1>Curso Férias</h1>
-						<div class="rating">
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star-half-stroke"></i>
-						</div>						
-						<p>
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-							Dignissimos labore at dolorum eius?
-						</p>
-						<!-- <i class="fa-solid fa-quote-right"></i> -->
-						<h3 class="course-price">R$190.00</h3>
-						<h2 class="price-2">Até 6x de R$35.00</h2>					
+	</section>
+	<!-- COURSES -->
+	<section id="review" class="review">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-3 course1">
+					<h1>Curso Férias</h1>
+					<div class="rating">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star-half-stroke"></i>
 					</div>
-					<div class="col-3 course2">						
-						<!-- <img src="img/curso2.jpg" alt="" /> -->
-						<h1>Revisão Pré</h1>
-							<div class="rating">
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-regular fa-star"></i>
-						</div>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Aspernatur, architecto? Ipsam, dignissimos!.
-						</p>					
-						<!-- <i class="fa-solid fa-quote-right"></i> -->
-						<h3 class="course-price">R$280.00</h3>
-						<h2 class="price-2">Até 6x de R$56.70</h2>	
-					</div>
-					<div class="col-3 course3">
-						<!-- <img src="img/curso3.png" alt="" /> -->
-						<h1>Simuladão</h1>						
-						<div class="rating">
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>							
-						</div>						
-						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
-							facere autem eius, odit quas placeat.
-						</p>
-						<!-- <i class="fa-solid fa-quote-right"></i> -->
-						<h3 class="course-price">R$120.00</h3>
-						<h2 class="price-2">Até 6x de R$22.80</h2>	
-					</div>
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+						Dignissimos labore at dolorum eius?
+					</p>
+					<h3 class="course-price">R$190.00</h3>
+					<h2 class="price-2">Até 6x de R$35.00</h2>
 				</div>
-				<br/>
-				<div class="row">
-					<div class="col-3 course4">						
-						<!-- <img src="img/curso4.jpg" alt="" /> -->
-						<h1>Medicina</h1>
-						<div class="rating">
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star-half-stroke"></i>
-						</div>						
-						<p>
-							Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-							Dignissimos labore at dolorum eius?
-						</p>
-						<!-- <i class="fa-solid fa-quote-right"></i> -->
-						<h3 class="course-price">R$180.00</h3>	
-						<h2 class="price-2">Até 6x de R$35.50</h2>						
+				<div class="col-3 course2">
+					<h1>Revisão Pré</h1>
+					<div class="rating">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
 					</div>
-					<div class="col-3 course5">						
-						<!-- <img src="img/curso5.jpg" alt="" /> -->
-						<h1>Engenharia</h1>
-							<div class="rating">
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-regular fa-star"></i>
-						</div>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Aspernatur, architecto? Ipsam, dignissimos!.
-						</p>					
-						<!-- <i class="fa-solid fa-quote-right"></i> -->
-						<h3 class="course-price">R$250.00</h3>
-						<h2 class="price-2">Até 6x de R$42.80</h2>	
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Aspernatur, architecto? Ipsam, dignissimos!.
+					</p>
+					<h3 class="course-price">R$280.00</h3>
+					<h2 class="price-2">Até 6x de R$56.70</h2>
+				</div>
+				<div class="col-3 course3">
+					<h1>Simuladão</h1>
+					<div class="rating">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
 					</div>
-					<div class="col-3 course6">
-						<!-- <img src="img/curso6.jpg" alt="" /> -->
-						<h1>Revisão ENEM</h1>						
-						<div class="rating">
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>
-							<i class="fa-solid fa-star"></i>							
-						</div>						
-						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
-							facere autem eius, odit quas placeat.
-						</p>
-						<!-- <i class="fa-solid fa-quote-right"></i> -->
-						<h3 class="course-price">R$200.00</h3>
-						<h2 class="price-2">Até 6x de R$33.80</h2>	
-					</div>
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
+						facere autem eius, odit quas placeat.
+					</p>
+					<h3 class="course-price">R$120.00</h3>
+					<h2 class="price-2">Até 6x de R$22.80</h2>
 				</div>
 			</div>
-		</section>
-
-		<!-- BRANDS -->
-		<div class="brands">
-			<div class="small-container">
-				<div class="row">
-					<div class="col-5">
-						<img src="img/keepedu.png" alt="" />
+			<br />
+			<div class="row">
+				<div class="col-3 course4">
+					<h1>Medicina</h1>
+					<div class="rating">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star-half-stroke"></i>
 					</div>
-					<div id="nike">
-						<img src="img/logo-great.svg" alt="" />
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+						Dignissimos labore at dolorum eius?
+					</p>
+					<h3 class="course-price">R$180.00</h3>
+					<h2 class="price-2">Até 6x de R$35.50</h2>
+				</div>
+				<div class="col-3 course5">
+					<h1>Engenharia</h1>
+					<div class="rating">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-regular fa-star"></i>
 					</div>
-					<div class="col-5">
-						<img src="img/logo-objetivo.svg" alt="" />
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Aspernatur, architecto? Ipsam, dignissimos!.
+					</p>
+					<h3 class="course-price">R$250.00</h3>
+					<h2 class="price-2">Até 6x de R$42.80</h2>
+				</div>
+				<div class="col-3 course6">
+					<h1>Revisão ENEM</h1>
+					<div class="rating">
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
+						<i class="fa-solid fa-star"></i>
 					</div>
-					<div class="col-5">
-						<img src="img/logo-pensar.png" alt="" />
-					</div>
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
+						facere autem eius, odit quas placeat.
+					</p>
+					<h3 class="course-price">R$200.00</h3>
+					<h2 class="price-2">Até 6x de R$33.80</h2>
 				</div>
 			</div>
 		</div>
-
-		<!-- FOOTER -->
-		<div class="footer">
-			<div class="container">
-				<div class="row">
-					<div class="footer-col-1">
-						<h3>Baixe Nosso App</h3>
-						<p>Baixe nosso App para dispositivos Android e iOS.</p>
-						<div class="app-logo">
-							<a style="cursor: pointer"><img src="img/play-store.png" alt="" /></a>
-							<a style="cursor: pointer"><img src="img/app-store.png" alt="" /></a>
-						</div>
-					</div>
-					<div class="footer-col-2">
-						<a href="#"><img src="img/logo-white.png" alt="" /></a>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nisi.
-						</p>
-					</div>
-					<div class="footer-col-3">
-						<h3>Links Úteis</h3>
-						<ul>
-							<li>Missão</li>
-							<li>Unidades</li>
-							<li>Atendimento</li>
-							<li>Termos & Condições</li>
-						</ul>
-					</div>
-					<div class="footer-col-4">
-						<h3>Nos Siga</h3>
-						<ul>
-							<li>Facebook</li>
-							<li>Twitter</li>
-							<li>Instagram</li>
-							<li>YouTube</li>
-						</ul>
-					</div>
+	</section>
+	<!-- BRANDS -->
+	<div class="brands">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-5">
+					<img src="img/keepedu.png" alt="" />
 				</div>
-				<hr />
-				<p class="copyright">
-					Desenvolvido por <a href="https://www.sampconrad.com/">Conrado Sampaio</a>
-				</p>
+				<div id="nike">
+					<img src="img/logo-great.svg" alt="" />
+				</div>
+				<div class="col-5">
+					<img src="img/logo-objetivo.svg" alt="" />
+				</div>
+				<div class="col-5">
+					<img src="img/logo-pensar.png" alt="" />
+				</div>
 			</div>
 		</div>
-
-		<!-- JS FOR TOGGLE MENU -->
-		<script>
-			let MenuItems = document.getElementById('MenuItems');
-			MenuItems.style.maxHeight = '0px';
-			function menutoggle() {
-				if (MenuItems.style.maxHeight == '0px') {
-					MenuItems.style.maxHeight = '200px';
-				} else {
-					MenuItems.style.maxHeight = '0px';
-				}
-			}
-		</script>
-		<!-- JS FOR STICKY NAVBAR -->
-		<script>
-			const navbar = document.getElementById('navbar')
-			window.onscroll = () => {
-					if (window.scrollY > 50) {
-							navbar.classList.add('nav-active');
-					} else {
-							navbar.classList.remove('nav-active');
-					}
-			};
-		</script>
-		<!-- JS FOR SEARCH BOX -->
-		<script>
-      const searchBox = document.querySelector(".search-box");
-      const searchBtn = document.querySelector(".search-icon");
-      const cancelBtn = document.querySelector(".cancel-icon");
-      const searchInput = document.querySelector("input");
-      const searchData = document.querySelector(".search-data");
-      searchBtn.onclick =()=>{
-        searchBox.classList.add("active");
-        searchBtn.classList.add("active");
-        searchInput.classList.add("active");
-        cancelBtn.classList.add("active");
-        searchInput.focus();
-        if(searchInput.value != ""){
-          var values = searchInput.value;
-          searchData.classList.remove("active");
-          searchData.innerHTML = "You just typed " + "<span style='font-weight: 500;'>" + values + "</span>";
-        }else{
-          searchData.textContent = "";
-        }
-      }
-      cancelBtn.onclick =()=>{
-        searchBox.classList.remove("active");
-        searchBtn.classList.remove("active");
-        searchInput.classList.remove("active");
-        cancelBtn.classList.remove("active");
-        searchData.classList.toggle("active");
-        searchInput.value = "";
-      }
-    </script>
-	</body>
+	</div>
+	<!-- FOOTER -->
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Baixe Nosso App</h3>
+					<p>Baixe nosso App para dispositivos Android e iOS.</p>
+					<div class="app-logo">
+						<a style="cursor: pointer"><img src="img/play-store.png" alt="" /></a>
+						<a style="cursor: pointer"><img src="img/app-store.png" alt="" /></a>
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<a href="#"><img src="img/logo-white.png" alt="" /></a>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, nisi.
+					</p>
+				</div>
+				<div class="footer-col-3">
+					<h3>Links Úteis</h3>
+					<ul>
+						<li>Missão</li>
+						<li>Unidades</li>
+						<li>Atendimento</li>
+						<li>Termos & Condições</li>
+					</ul>
+				</div>
+				<div class="footer-col-4">
+					<h3>Nos Siga</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>Instagram</li>
+						<li>YouTube</li>
+					</ul>
+				</div>
+			</div>
+			<hr />
+			<p class="copyright">
+				Desenvolvido por <a href="https://www.sampconrad.com/">Conrado Sampaio</a>
+			</p>
+		</div>
+	</div>
+	<!-- JAVASCRIPT -->
+	<script src="script.js"></script>
+</body>
 </html>
