@@ -23,12 +23,40 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: #26e9ff;
+		background-image: linear-gradient(
+		to bottom,
+		#00f4ff,
+		#00e5ff,
+		#00d6ff,
+		#00c6ff,
+		#00b5ff,
+		#00b8ff,
+		#00baff,
+		#00bdff,
+		#00d3ff,
+		#00e6ef,
+		#00f5c2,
+		#00ff85
+	);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-	background: #3bb3ff;
+		background-image: linear-gradient(
+		to bottom,
+		#ffd200,
+		#ffb249,
+		#ff997e,
+		#ff8fad,
+		#ff94d1,
+		#e0a7f0,
+		#bdb9ff,
+		#a1c7ff,
+		#62d9ff,
+		#00e9ff,
+		#00f7eb,
+		#36ffb9
+	);
 }
 
 .navbar {
